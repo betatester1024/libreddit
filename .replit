@@ -1,4 +1,4 @@
-run = "while :; do set -ex; nix-env -iA nixpkgs.unzip; curl -o./libreddit.zip -fsSL -- https://nightly.link/libreddit/libreddit/workflows/main-rust/master/libreddit.zip; unzip -n libreddit.zip; mv target/x86_64-unknown-linux-gnu/release/libreddit .; chmod +x libreddit; set +e; ./libreddit -H 63115200; sleep 1; done"
+run = "libreddit -H/nix/store/f2w94sr825qx50g81ms11skcd1wxihpv-libreddit-0.24.0"
 language = "bash"
 
 [nix]

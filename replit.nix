@@ -1,5 +1,6 @@
 { pkgs }: {
 	deps = [
+   pkgs.libreddit
 		pkgs.rustc
 		pkgs.rustfmt
 		pkgs.cargo
